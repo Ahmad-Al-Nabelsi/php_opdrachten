@@ -4,10 +4,13 @@ echo "<h1> opdracht 1: </h1><br>";
 function berekenCijfer($maxPunten, $behaaldePunten) {
     // Controleer of de invoer numeriek is
     if (!is_numeric($maxPunten) || !is_numeric($behaaldePunten)) {
+        echo "Dit is geen nummer";
         return false;
     } elseif ($maxPunten <= 0 || $behaaldePunten < 0) {
+        echo "Het aantal punten moet groter zijn dan 0";
         return false;
     } elseif ($behaaldePunten > $maxPunten) {
+        echo "Het aantal behaalde punten kan niet groter zijn dan het maximaal aantal punten";
         return false;
     }
 
