@@ -5,6 +5,10 @@ function berekenCijfer($maxPunten, $behaaldePunten) {
     // Controleer of de invoer numeriek is
     if (!is_numeric($maxPunten) || !is_numeric($behaaldePunten)) {
         return false;
+    } elseif ($maxPunten <= 0 || $behaaldePunten < 0) {
+        return false;
+    } elseif ($behaaldePunten > $maxPunten) {
+        return false;
     }
 
     // Bereken het eindresultaat
