@@ -1,0 +1,124 @@
+/* Algemene instellingen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef0e5;
+    overflow: hidden; /* يمنع التمرير */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Hoofd van de pagina */
+header {
+    background-color: #7da26d;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Algemeen ontwerp */
+.container {
+    display: flex;
+    flex: 1;
+    overflow: hidden; /* يمنع ظهور التمرير */
+}
+
+/* Hoofdinhoud */
+.main-content {
+    width: 80%;
+    padding: 20px;
+    background-color: #0096ff;
+    color: white;
+    height: calc(100vh - 60px); /* يضمن ملاءمة المحتوى بدون شريط تمرير */
+    overflow-y: auto;
+}
+
+/* Formatteer de link "Toevoegen" */
+.add-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.add-link:hover {
+    background-color: darkred;
+}
+
+/* "show" links */
+.show-link {
+    color: yellow;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.show-link:hover {
+    text-decoration: underline;
+}
+
+/* Voettekst van de pagina */
+footer {
+    background-color: #3c733f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.delete-link {
+    color: red;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.delete-link:hover {
+    text-decoration: underline;
+}
+
+/* Zijmenu (rechts) */
+.sidebar {
+    width: 20%;
+    background-color: #ddd;
+    padding: 20px;
+    height: 100%;
+    text-align: left;
+    position: absolute;
+    right: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* "edit" links */
+.edit-link {
+    color: blue;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
