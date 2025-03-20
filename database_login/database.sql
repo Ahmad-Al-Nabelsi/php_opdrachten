@@ -9,6 +9,6 @@ CREATE TABLE users (
 
 -- Voer gebruikersgegevens in met wachtwoord codering
 INSERT INTO users (username, password) VALUES
-('user1', SHA1('password1')),
-('user2', SHA1('password2')),
-('user3', SHA1('password3'));
+('user1', SHA1('pass1')),
+('user2', SHA1('pass2')),
+('user3', SHA1('pass3'));
